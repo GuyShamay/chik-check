@@ -1,0 +1,13 @@
+.App-header{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+
+@media (max-width: 425px) {
+    .App-header{
+        height: 8rem;
+    }
+}

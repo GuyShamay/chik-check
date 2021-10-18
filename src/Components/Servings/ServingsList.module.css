@@ -1,0 +1,54 @@
+.servings {
+  margin: 2rem auto;
+  width: 90%;
+  float: left;
+  margin-left: 5rem;
+
+  margin-right: 5rem;
+  height: 100%;
+}
+.header {
+  text-align: center;
+  font: bold;
+  margin-top: 1rem;
+  font-size: x-large;
+}
+
+.servings ul {
+  width: 100%;
+  clear: both;
+  height: 32px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.servingslist__fallback {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin: 2rem auto;
+  margin-left: 5rem;
+  display: block;
+  height: 5rem;
+  width: 90%;
+  margin-right: 5rem;
+}
+
+
+@media (max-width: 425px) {
+  .servings{
+    margin-left: 1rem
+  }
+
+  .servings li {
+    width: 35%;
+    height: 70px;
+    border-radius: 0.5rem;
+    font-size: x-small;font-weight: lighter;
+    margin: auto auto 0.5rem 1rem;
+}
+
+.servingslist__fallback {
+  margin-left: 1rem;
+}}

@@ -1,0 +1,98 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: rgb(255, 255, 255);
+}
+
+.modal {
+  position: fixed;
+  top: 30vh;
+  left: 10%;
+  width: 60%;
+  z-index: 100;
+  overflow: hidden;
+  background: #b7bde0;
+}
+
+.header {
+  background: #10207ace;
+  padding: 1rem;
+  padding-bottom: 2.8rem;
+  height: 100%;
+}
+
+.header h2 {
+  margin: 0;
+  color: white;
+  font-weight: lighter;
+  float: left;
+}
+
+.content {
+  padding: 1rem;
+}
+.modal li {
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 80%;
+  height: 60px;
+  float: left;
+  list-style-type: none;
+  margin: 1rem 0 1rem 3rem;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: #0d4cdf7c;
+  display: grid;
+  grid-template-areas: "name money";
+}
+.name {
+  float: left;
+  font-size: x-large;
+  margin: 1rem 1rem auto 2rem;
+  grid-area: name;
+}
+.price {
+  float: right;
+  margin: 0.5rem 1rem auto 2rem;
+  grid-area: money;
+  font-size: xx-large;
+  font-weight: lighter;
+}
+.modal ul {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.actions {
+  float: right;
+  display: block;
+}
+
+@media (max-width: 425px) {
+  .modal {
+    width: 80%;
+  }
+  .modal li {
+    width: 80%;
+    height: 50px;
+    margin: 1rem 0 1rem 1rem;
+  }
+  .header h2 {
+  font-size: medium;}
+  .name {
+    font-size: medium;
+  }
+  .price {
+    margin: 1.1rem 1rem auto 0rem;
+    font-size:medium;
+    font-weight: lighter;
+  }
+}

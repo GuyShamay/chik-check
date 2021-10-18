@@ -1,0 +1,16 @@
+.item {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 23.5%;
+  height: 35px;
+  float: left;
+  list-style-type: none;
+  margin: 1rem auto 1rem 2rem;
+
+  border: 1px solid rgb(0, 0, 0);
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: #0d4cdf7c;
+  color: cornsilk;
+}

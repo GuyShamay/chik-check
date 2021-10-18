@@ -1,0 +1,89 @@
+.addServing {
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-template-rows: 50px 65px auto auto;
+  grid-template-areas:
+    "lblname inputname"
+    "lblprice inputprice"
+    "s msg"
+    "s btn";
+  width: 35%;
+  margin: 10px auto;
+  background-color: #4166b657;
+  box-shadow: 0 5px 8 px rgba(0, 0, 0, 0.521);
+}
+
+.lblname {
+  grid-area: lblname;
+  font-weight: bold;
+  margin: 1rem auto 1rem 1rem;
+}
+.lblprice {
+  grid-area: lblprice;
+  font-weight: bold;
+  margin: 1rem auto 1rem 1rem;
+}
+.label_msg {
+  grid-area: msg;
+  font-weight: lighter;
+  margin: auto auto 1rem 1rem;
+}
+
+.inputname {
+  grid-area: inputname;
+}
+.inputname input {
+  font: inherit;
+  width: 80%;
+  border: 1px solid rgb(158, 157, 157);
+  padding: 0.15rem;
+  margin: 1rem 1rem 0.5rem 1rem;
+}
+
+.inputname input:focus {
+  outline: none;
+  border-color: #2d1eb6;
+}
+.inputprice {
+  grid-area: inputprice;
+}
+.inputprice input {
+  font: inherit;
+  width: 80%;
+  border: 1px solid rgb(158, 157, 157);
+  padding: 0.15rem;
+  margin: 1rem 1rem 0.5rem 1rem;
+}
+
+.inputprice input:focus {
+  outline: none;
+  border-color: #2d1eb6;
+}
+
+.btn {
+  grid-area: btn;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 425px) {
+  .addServing {
+    grid-template-rows: 45px 50px 45px 50px;
+    grid-auto-rows: 50px;
+grid-template-columns: 95%;    grid-template-areas:
+      "lblname"
+      "inputname"
+      "lblprice"
+      "inputprice"
+      "msg"
+      "btn";
+    width: 80%;
+  }
+
+  .label_msg {
+    width: 90%;
+  }
+  
+  
+  
+}

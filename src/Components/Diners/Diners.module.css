@@ -1,0 +1,12 @@
+.diners {
+  display: grid;
+  grid-template-areas:
+    "add"
+    "list";
+    grid-template-rows: 200px auto;
+
+}
+
+.list{
+    grid-area: list;
+}

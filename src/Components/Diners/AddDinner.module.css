@@ -1,0 +1,86 @@
+.adddinner {
+  display: grid;
+  grid-template-columns: 75% auto;
+  grid-template-rows: auto auto 50px 65px;
+  grid-template-areas:
+    "name name"
+    "input submit"
+    "msg msg"
+    "nsmsg ns";
+  width: 35%;
+  margin: 10px auto;
+  background-color: #4166b657;
+  box-shadow: 0 5px 8 px rgba(0, 0, 0, 0.521);
+}
+
+.label_name {
+  grid-area: name;
+  font-weight: bold;
+  margin: 1rem auto 0.5rem 1rem;
+}
+
+.input {
+  grid-area: input;
+}
+.input input {
+  font: inherit;
+  width: 80%;
+  border: 1px solid #ccc;
+  padding: 0.15rem;
+  margin: 2px 1rem 0.5rem 1rem;
+}
+
+.input input:focus {
+  outline: none;
+  border-color: #202ddf;
+}
+
+.submit {
+  grid-area: submit;
+  align-self: start;
+}
+
+.label_msg {
+  grid-area: msg;
+  font-weight: lighter;
+  margin: 2px auto 2px 1rem;
+}
+
+.nextstep {
+  grid-area: ns;
+}
+
+.ns_label {
+  grid-area: nsmsg;
+  font-weight: normal;
+  margin: 2px auto 2px 1rem;
+}
+
+@media (max-width: 425px) {
+  .adddinner {
+    grid-template-columns: 70% auto;
+
+    grid-template-areas:
+      "name name"
+      "input input"
+      "msg submit"
+      "nsmsg ns";
+    width: 95%;
+    height: 100%;
+  }
+  .input input {
+    width: 88%;
+  }
+  .nextstep {
+    grid-area: ns;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+  }
+  .submit {margin-left: 0.5rem;}
+  .ns_label {
+    grid-area: nsmsg;
+    font-weight: normal;
+    margin: 0.5rem auto 1rem 1rem;
+    font-size: small;
+    padding-right: 1.5rem;
+  }
+}
