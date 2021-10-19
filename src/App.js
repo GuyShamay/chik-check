@@ -4,6 +4,7 @@ import Diners from "./Components/Diners/Diners";
 import Servings from "./Components/Servings/Servings";
 import Check from "./Components/Check/Check";
 import HeadLogo from "./Components/General/HeadLogo";
+import Tips from "./Components/Tip/Tips";
 
 const App = () => {
   // Notes:
@@ -30,7 +31,12 @@ const App = () => {
     setDiners((prevDiners) => {
       return [
         ...prevDiners,
-        { name: uName, amountToPay: 0, id: Math.random().toString() },
+        {
+          name: uName,
+          amountToPay: 0,
+          payWithTip: 0,
+          id: Math.random().toString(),
+        },
       ];
     });
   };
@@ -44,6 +50,13 @@ const App = () => {
     setIsAddingDiners(true);
     setIsCheck(false);
   };
+
+  const addTipHandler = (tip) => {
+    diners.map((dinner) => {
+      dinner.payWithTip = dinner.amountToPay + (dinner.amountToPay * tip) / 100;
+    });
+  };
+
   return (
     <div className="App">
       {isStart && (
@@ -76,6 +89,7 @@ const App = () => {
           title="Here's the Check!"
           diners={diners}
           onFinishDinnig={finishDinningHandler}
+          onAddTip={addTipHandler}
         />
       )}
     </div>

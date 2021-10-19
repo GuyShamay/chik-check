@@ -1,0 +1,54 @@
+.tips {
+  display: block;
+  background: rgba(16, 43, 199, 0.322);
+  box-shadow: 0 4px 8 px rgba(0, 0, 0, 0.26);
+  border-radius: 4px;
+  width: 40%;
+  height: 100%;
+  padding: 8px;
+  margin: 1rem auto;
+}
+.tips input {
+  width: 50%;
+  border-radius: 1px;
+  height: 1.5rem;
+}
+.tips button {
+  float: right;
+  width: 30%;
+  margin-right: 1rem;
+  font: inherit;
+  border: 1px solid #edebee2d;
+  background: #4166b6c9;
+  color: white;
+  border-radius: 5px;
+  height: 1.9rem;
+}
+
+.tips button:hover,
+.tips button:active {
+  background: #4166b6f1;
+  border-color: #4166b6f1;
+}
+
+.tips button:focus {
+  outline: none;
+}
+@media (max-width: 425px) {
+  .tips {
+    width: 90%;
+    padding: 4px;
+    height: 3rem;
+
+  }
+  .tips button {
+    width: 35%;
+    margin-right: 2px;
+    height: 3rem;
+
+  }
+  .tips input {
+    width: 55%;
+    height: 2.5rem;
+  }
+}
